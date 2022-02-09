@@ -14,6 +14,6 @@ TC1 Valid Login
    Click Element   id=welcome
    Sleep  5s
    Click Element   link=Logout
-   Close  Browser
+   Close Browser
 
 
