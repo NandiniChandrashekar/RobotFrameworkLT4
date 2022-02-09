@@ -1,73 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220209 14:53:46.726" rpa="false" schemaversion="2">
-<suite id="s1" name="Nasscom" source="D:\robot_project\selenium_suite\nasscom.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220209 15:49:11.111" rpa="false" schemaversion="2">
+<suite id="s1" name="Medibuddy" source="D:\robot_project\selenium_suite\medibuddy.robot">
 <test id="s1-t1" name="TC1 ValidLogin">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url= https://nasscom.in/about-us/career</arg>
+<arg>url= https://www.medibuddy.in/</arg>
 <arg>browser=chrome</arg>
 <arg>executable_path=${EXECDIR}${/}drivers\\chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220209 14:53:47.402" level="INFO">Opening browser 'chrome' to base url ' https://nasscom.in/about-us/career'.</msg>
-<status status="PASS" starttime="20220209 14:53:47.400" endtime="20220209 14:53:54.291"/>
+<msg timestamp="20220209 15:49:11.534" level="INFO">Opening browser 'chrome' to base url ' https://www.medibuddy.in/'.</msg>
+<status status="PASS" starttime="20220209 15:49:11.533" endtime="20220209 15:49:14.574"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220209 14:53:54.294" endtime="20220209 14:53:54.475"/>
+<status status="PASS" starttime="20220209 15:49:14.574" endtime="20220209 15:49:14.700"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220209 15:49:14.700" endtime="20220209 15:49:14.703"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>link =New User</arg>
+<arg>id=wzrk-cancel</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 14:53:54.477" level="INFO">Clicking element 'link =New User'.</msg>
-<status status="PASS" starttime="20220209 14:53:54.476" endtime="20220209 14:53:54.795"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=edit-field-fname-reg</arg>
-<arg>admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 14:53:54.798" level="INFO">Typing text 'admin' into text field 'id=edit-field-fname-reg'.</msg>
-<status status="PASS" starttime="20220209 14:53:54.797" endtime="20220209 14:53:55.041"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=edit-field-lname</arg>
-<arg>pass</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 14:53:55.043" level="INFO">Typing text 'pass' into text field 'id=edit-field-lname'.</msg>
-<status status="PASS" starttime="20220209 14:53:55.043" endtime="20220209 14:53:55.266"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=edit-mail</arg>
-<arg>admin@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 14:53:55.270" level="INFO">Typing text 'admin@gmail.com' into text field 'id=edit-mail'.</msg>
-<status status="PASS" starttime="20220209 14:53:55.269" endtime="20220209 14:53:55.528"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=edit-field-company-name-registration</arg>
-<arg>Google</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 14:53:55.530" level="INFO">Typing text 'Google' into text field 'id=edit-field-company-name-registration'.</msg>
-<status status="PASS" starttime="20220209 14:53:55.529" endtime="20220209 14:53:55.727"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>id=edit-field-business-focus-reg</arg>
-<arg>IT Consulting</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220209 14:53:55.729" level="INFO">Selecting options from selection list 'id=edit-field-business-focus-reg' by label IT Consulting.</msg>
-<status status="PASS" starttime="20220209 14:53:55.728" endtime="20220209 14:53:55.902"/>
+<msg timestamp="20220209 15:49:14.706" level="INFO">Clicking element 'id=wzrk-cancel'.</msg>
+<status status="PASS" starttime="20220209 15:49:14.705" endtime="20220209 15:49:23.709"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>name=op</arg>
+<arg>link=For Employer</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 14:53:55.904" level="INFO">Clicking element 'name=op'.</msg>
-<status status="PASS" starttime="20220209 14:53:55.903" endtime="20220209 14:53:56.048"/>
+<msg timestamp="20220209 15:49:23.711" level="INFO">Clicking element 'link=For Employer'.</msg>
+<status status="PASS" starttime="20220209 15:49:23.710" endtime="20220209 15:49:23.909"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MediBuddy LaunchPad</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220209 15:49:23.910" endtime="20220209 15:49:27.491"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Sign up</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:27.491" level="INFO">Clicking element 'link=Sign up'.</msg>
+<status status="PASS" starttime="20220209 15:49:27.491" endtime="20220209 15:49:27.601"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=name</arg>
+<arg>nandini</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:27.605" level="INFO">Typing text 'nandini' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20220209 15:49:27.603" endtime="20220209 15:49:27.768"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=email</arg>
+<arg>nan@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:27.770" level="INFO">Typing text 'nan@gmail.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20220209 15:49:27.769" endtime="20220209 15:49:27.919"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=companyName</arg>
+<arg>Lt</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:27.921" level="INFO">Typing text 'Lt' into text field 'id=companyName'.</msg>
+<status status="PASS" starttime="20220209 15:49:27.920" endtime="20220209 15:49:28.033"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=mobileNumber</arg>
+<arg>8889875439</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:28.034" level="INFO">Typing text '8889875439' into text field 'id=mobileNumber'.</msg>
+<status status="PASS" starttime="20220209 15:49:28.033" endtime="20220209 15:49:28.173"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=address</arg>
+<arg>USA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:28.174" level="INFO">Typing text 'USA' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20220209 15:49:28.173" endtime="20220209 15:49:28.308"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=pincode</arg>
+<arg>876437</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:28.310" level="INFO">Typing text '876437' into text field 'id=pincode'.</msg>
+<status status="PASS" starttime="20220209 15:49:28.309" endtime="20220209 15:49:28.413"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=websiteUrl</arg>
+<arg>www.goole.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:28.414" level="INFO">Typing text 'www.goole.com' into text field 'id=websiteUrl'.</msg>
+<status status="PASS" starttime="20220209 15:49:28.414" endtime="20220209 15:49:28.573"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=empCount</arg>
+<arg>100</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:28.574" level="INFO">Typing text '100' into text field 'id=empCount'.</msg>
+<status status="PASS" starttime="20220209 15:49:28.574" endtime="20220209 15:49:28.684"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@value='Next']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220209 15:49:28.685" level="INFO">Clicking element 'xpath=//input[@value='Next']'.</msg>
+<status status="PASS" starttime="20220209 15:49:28.685" endtime="20220209 15:49:28.782"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220209 14:53:56.050" endtime="20220209 14:53:58.360"/>
+<status status="PASS" starttime="20220209 15:49:28.782" endtime="20220209 15:49:31.211"/>
 </kw>
-<status status="PASS" starttime="20220209 14:53:47.399" endtime="20220209 14:53:58.362"/>
+<status status="PASS" starttime="20220209 15:49:11.532" endtime="20220209 15:49:31.213"/>
 </test>
-<status status="PASS" starttime="20220209 14:53:46.732" endtime="20220209 14:53:58.369"/>
+<status status="PASS" starttime="20220209 15:49:11.114" endtime="20220209 15:49:31.215"/>
 </suite>
 <statistics>
 <total>
@@ -76,7 +119,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Nasscom">Nasscom</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Medibuddy">Medibuddy</stat>
 </suite>
 </statistics>
 <errors>
