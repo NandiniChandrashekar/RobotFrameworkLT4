@@ -1,3 +1,5 @@
+*** Settings ***
+Library    Collections
 *** Variables ***
 ${MY_NAME}    Nandini
 @{COLORS}  red   green  yellow  black  blue pink
@@ -34,3 +36,6 @@ TC4
    Log To Console    ${Employee1}[empfname]
    Log To Console    ${Employee1}[emplname]
    Log To Console    The employee age is ${Employee1}[age]
+   Log Dictionary    ${Employee1}
+   Log list   ${COLORS}
+   Comment     learnt the scalar,list,dic
