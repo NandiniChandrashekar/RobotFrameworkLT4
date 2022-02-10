@@ -1,99 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220209 17:11:12.038" rpa="false" schemaversion="2">
-<suite id="s1" name="Db4Free" source="D:\robot_project\selenium_suite\db4free.robot">
-<test id="s1-t1" name="TC1 ValidLogin">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>url= https://db4free.net/</arg>
-<arg>browser=chrome</arg>
-<arg>executable_path=${EXECDIR}${/}drivers\\chromedriver.exe</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220209 17:11:12.327" level="INFO">Opening browser 'chrome' to base url ' https://db4free.net/'.</msg>
-<status status="PASS" starttime="20220209 17:11:12.327" endtime="20220209 17:11:16.346"/>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220210 10:35:59.924" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo2 Suite" source="D:\robot_project\robot_suite\demo2_suite.robot">
+<test id="s1-t1" name="TC4">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Employee1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220210 10:35:59.954" endtime="20220210 10:35:59.955"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220209 17:11:16.347" endtime="20220209 17:11:16.469"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Employee1}[empfname]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220210 10:35:59.955" endtime="20220210 10:35:59.956"/>
 </kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220209 17:11:16.470" endtime="20220209 17:11:16.471"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Employee1}[emplname]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220210 10:35:59.956" endtime="20220210 10:35:59.957"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//b[contains(text(),'php')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:16.472" level="INFO">Clicking element 'xpath=//b[contains(text(),'php')]'.</msg>
-<status status="PASS" starttime="20220209 17:11:16.471" endtime="20220209 17:11:16.545"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>The employee age is ${Employee1}[age]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220210 10:35:59.957" endtime="20220210 10:35:59.957"/>
 </kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>phpMyAdmin</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220209 17:11:16.546" endtime="20220209 17:11:19.168"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=input_username</arg>
-<arg>db123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:19.169" level="INFO">Typing text 'db123' into text field 'id=input_username'.</msg>
-<status status="PASS" starttime="20220209 17:11:19.169" endtime="20220209 17:11:19.251"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=input_password</arg>
-<arg>test123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:19.251" level="INFO">Typing password into text field 'id=input_password'.</msg>
-<msg timestamp="20220209 17:11:19.291" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220209 17:11:19.340" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220209 17:11:19.251" endtime="20220209 17:11:19.341"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=input_go</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:19.342" level="INFO">Clicking element 'id=input_go'.</msg>
-<status status="PASS" starttime="20220209 17:11:19.341" endtime="20220209 17:11:20.074"/>
-</kw>
-<kw name="Close Window" library="SeleniumLibrary">
-<doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" starttime="20220209 17:11:20.075" endtime="20220209 17:11:20.097"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>db4free.net - MySQL Database for free</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220209 17:11:20.098" endtime="20220209 17:11:20.121"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>link=Donations</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:20.121" level="INFO">Clicking element 'link=Donations'.</msg>
-<status status="PASS" starttime="20220209 17:11:20.121" endtime="20220209 17:11:20.694"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=form_amount</arg>
-<arg>-90</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:20.694" level="INFO">Typing text '-90' into text field 'id=form_amount'.</msg>
-<status status="PASS" starttime="20220209 17:11:20.694" endtime="20220209 17:11:20.777"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>id=form_currency</arg>
-<arg>JPY</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220209 17:11:20.778" level="INFO">Selecting options from selection list 'id=form_currency' by label JPY.</msg>
-<status status="PASS" starttime="20220209 17:11:20.778" endtime="20220209 17:11:20.837"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=submit</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 17:11:20.837" level="INFO">Clicking element 'name=submit'.</msg>
-<status status="PASS" starttime="20220209 17:11:20.837" endtime="20220209 17:11:24.581"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220209 17:11:24.581" endtime="20220209 17:11:27.070"/>
-</kw>
-<status status="PASS" starttime="20220209 17:11:12.326" endtime="20220209 17:11:27.071"/>
+<status status="PASS" starttime="20220210 10:35:59.954" endtime="20220210 10:35:59.958"/>
 </test>
-<status status="PASS" starttime="20220209 17:11:12.040" endtime="20220209 17:11:27.073"/>
+<status status="PASS" starttime="20220210 10:35:59.925" endtime="20220210 10:35:59.959"/>
 </suite>
 <statistics>
 <total>
@@ -102,7 +33,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Db4Free">Db4Free</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Suite">Demo2 Suite</stat>
 </suite>
 </statistics>
 <errors>
